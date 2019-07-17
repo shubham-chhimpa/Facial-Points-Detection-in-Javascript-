@@ -1,7 +1,7 @@
 
 
 async function loadModel() {
-    let model = await tf.loadLayersModel('http://localhost:3000/model.json');
+    let model = await tf.loadLayersModel('http://localhost:5000/model.json');
     return model;
 }
 
@@ -281,7 +281,7 @@ function listToMatrix(list, elementsPerSubArray) {
 
 function drawGlasses(x,y){
     var glasses = new Image();
-    glasses.src = 'http://localhost:3000/mustache.png';
+    glasses.src = 'http://localhost:5000/mustache.png';
 
      glasses.onload = function () {
         let ctx = document.getElementById('canvasOutput').getContext('2d');
