@@ -1,7 +1,7 @@
 
 
 async function loadModel() {
-    let model = await tf.loadLayersModel('https://polar-sea-20263.herokuapp.com/model.json');
+    let model = await tf.loadLayersModel('/model.json',{mode : 'no-cors'});
     return model;
 }
 
